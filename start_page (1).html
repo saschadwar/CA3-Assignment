@@ -30,14 +30,16 @@
       }
     /* 6. Create a border around each subsection of the article, including the subsection heading. The border should be solid, 3px wide, and be `c-cyan` in color. */
       article section {
-        padding-top: 50px;
-        border: 3px solid (--c-cyan);
-      }
+        border: 3px solid var(--c-cyan);
+        padding: 10px;
+        margin: 10px;
+    }
     /* 7. Align the Header in the center, and set the text size to 150%. The heading should be c-yellow. */
       header {
         background-color: var(--c-background-highlights);
         text-align: center;   
         font-size: 150%;
+        color: var(--c-yellow);
       }
     /* 8. Remove the bullet points from the unordered list in the nav section. */
       nav ul {
@@ -66,12 +68,7 @@
         margin: 0 auto;
       }
     /* 12. All headings within the article should have a top padding of 50px. */
-      article h1, 
-      article h2,
-      article h3,
-      article h4,
-      article h5,
-      article h6 {
+      article h1, article h2, article h3, article h4, article h5, article h6 {
         padding-top: 50px;
       }
     /* 13. Set the layout of the main content section such that the 'related links' portion is to the right of the article. */
@@ -134,7 +131,7 @@
       <article>
         <h2>Article heading</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. <m href="https://www.example.com">Visit our website</m> for more information.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. <m href="https://www.google.com"> Visit our website</m> for more information.</p>
         
         <h3>Subsection</h3>
 
