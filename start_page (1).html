@@ -21,7 +21,9 @@
         color: var(--base-font-color); 
       }  
     /* 4. Links in the article should be c-magenta. (If there are no links in the article, add some!) */
-    {}
+      b {
+        color: var(--c-magenta);
+      }
     /* 5. When the mouse hovers over a link, it should be highlighted orange. */
     {}
     /* 6. Create a border around each subsection of the article, including the subsection heading. The border should be solid, 3px wide, and be `c-cyan` in color. */
@@ -99,8 +101,10 @@
       <article>
         <h2>Article heading</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+        <p> <h2>Article heading</h2>
 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b href="https://www.example.com">Visit our website</a> for more information.</p>
+        
         <h3>Subsection</h3>
 
         <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
