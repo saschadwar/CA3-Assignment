@@ -29,7 +29,7 @@
         color: var(--c-orange);
       }
     /* 6. Create a border around each subsection of the article, including the subsection heading. The border should be solid, 3px wide, and be `c-cyan` in color. */
-      article section {
+      article h3 to h5 {
         border: 3px solid var(--c-cyan);
         padding: 10px;
         margin: 10px;
@@ -43,24 +43,29 @@
       }
     /* 8. Remove the bullet points from the unordered list in the nav section. */
       nav ul {
+        display: flex;
+        justify-content: center;
         list-style: none;
-      }
+        padding: 0;
     /* 9.For the list items in the nav section list, align to the center, and apply a flex layout. (Hint: this is hard. The nav bar needs to be the entire width of the page in order for all items here to be displayed correctly). */
       nav ul li {
         display: inline;
         margin-right: 20px;
-        display: flex;
         justify-content: center;
       }
     /* 10. Color all text in the aside to c-green. All links in the aside should be c-red, except when they are hovered over, when they should be c-blue.*/
       aside {
         color: var(--c-green);
       }
-      aside { 
+    /* Style links in the aside section */
+      aside a:hover {
         color: var(--c-red);
+        text-decoration: none; /* Remove default underline from links */
       }
-      aside {
+    /* Change link color when hovered over */
+      aside a:hover {
         color: var(--c-blue);
+        text-decoration: underline;
       }
     /* 11. Set the maximum width of the page to 800px.*/
       body {
