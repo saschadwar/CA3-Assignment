@@ -21,11 +21,13 @@
         color: var(--base-font-color); 
       }  
     /* 4. Links in the article should be c-magenta. (If there are no links in the article, add some!) */
-      magentalink {
+     article m {
         color: var(--c-magenta);
       }
     /* 5. When the mouse hovers over a link, it should be highlighted orange. */
-    {}
+      nav a:hover {
+      color: var(--c-orange);
+    }
     /* 6. Create a border around each subsection of the article, including the subsection heading. The border should be solid, 3px wide, and be `c-cyan` in color. */
     {}
     /* 7. Align the Header in the center, and set the text size to 150%. The heading should be c-yellow. */
@@ -103,7 +105,7 @@
 
         <p> <h2>Article heading</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <magentalink href="https://www.example.com">Visit our website</a> for more information.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <m href="https://www.example.com">Visit our website</m> for more information.</p>
         
         <h3>Subsection</h3>
 
