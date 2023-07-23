@@ -29,11 +29,8 @@
         color: var(--c-orange);
       }
     /* 6. Create a border around each subsection of the article, including the subsection heading. The border should be solid, 3px wide, and be `c-cyan` in color. */
-      article h2,
-      article h3,
-      article h4 { 
-        padding-top: 50px;
-        border-top: 3px solid(--c-cyan);
+      article section {
+        border: 3px solid c-cyan;
       }
     /* 7. Align the Header in the center, and set the text size to 150%. The heading should be c-yellow. */
       header {
@@ -75,8 +72,13 @@
         padding-top: 50px;
       }
     /* 13. Set the layout of the main content section such that the 'related links' portion is to the right of the article. */
-    
-    :root {
+      main {
+        display: flex;
+      } 
+      aside {
+        margin-left: 20px;
+      }
+        :root {
         --base-font-color: rgb(131,148,150);
         --secondary-font-color: rgb(88,110,117);
         --emphasised-font: rgb(147,161,161);
@@ -146,9 +148,8 @@
 
       <!-- the aside content can also be nested within the main content -->
       <aside>
-        <h2>Related</h2>
-
-        <ul>
+          <h2>Related</h2>
+          <ul>
           <li><a href="#">Oh I do like to be beside the seaside</a></li>
           <li><a href="#">Oh I do like to be beside the sea</a></li>
           <li><a href="#">Although in the North of England</a></li>
