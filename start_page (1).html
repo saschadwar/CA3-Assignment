@@ -7,13 +7,19 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
 
     <style>
-    /* Set the background color of the page to `c-background-color`. */
+    /* 1. Set the background color of the page to `c-background-color`. */
       body {
-        background-color: var(--c-background-color);}
+        background-color: var(--c-background-color);
+      }
 
-    /* Set text color in the main, footer, and header */
-      body, header, footer {
-        color: base-font-color;} 
+    /* 2. Set the text color in the main, footer, and header to be `base-font-color`. */
+      header,footer {
+        background-color: var(--c-background-highlights);
+        color: var(--base-font-color); 
+        text-align: center;
+        font-size: 150%;
+        color: var(--c-yellow);
+       }
 
       :root {
         --base-font-color: rgb(131,148,150);
