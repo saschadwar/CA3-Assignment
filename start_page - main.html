@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>My page title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+
+    <style>
+    /* 1. Set the background color of the page to `c-background-color`. */
+      body {
+        background-color: var(--c-background-color);
+        max-width: var(--max-page-width);
+        margin: 0 auto;
+      }
+    /* 2. Set the background color of the header and footer to `c-background-highlights`*/
+      header, footer {
+        background-color: var(--c-background-highlights);              
+      }
+    /* 3. Set the text color in the main, footer, and header to be `base-font-color`. */
+      main, header, footer {
+        color: var(--base-font-color); 
+      }  
+    /* 4. Links in the article should be c-magenta. (If there are no links in the article, add some!) */
+      article a {
+        color: var(--c-magenta);
+      }
+    /* 5. When the mouse hovers over a link, it should be highlighted orange. */
+      nav a:hover {
+        color: var(--c-orange);
+      }
+    /* 6. Create a border around each subsection of the article, including the subsection heading. The border should be solid, 3px wide, and be `c-cyan` in color. */
+      article h3, article h4, article h5 {
+        border: 3px solid var(--c-cyan);
+        padding: 20px;
+        margin: 10px;
+    }
+    /* 7. Align the Header in the center, and set the text size to 150%. The heading should be c-yellow. */
+      header {
+        text-align: center;   
+        font-size: 150%;
+        color: var(--c-yellow);
+      }
+    /* 8. Remove the bullet points from the unordered list in the nav section. */
+      nav ul {
+        justify-content: center;
+        list-style: none;
+        display: flex;
+        padding: 0;
+      }
+    /* 9.For the list items in the nav section list, align to the center, and apply a flex layout. (Hint: this is hard. The nav bar needs to be the entire width of the page in order for all items here to be displayed correctly). */
+      nav ul li {
+        display: flex;
+        margin-right: 20px;
+      }
+    /* 10. Color all text in the aside to c-green. All links in the aside should be c-red, except when they are hovered over, when they should be c-blue.*/
+      aside {
+        color: var(--c-green);
+      }
+      /* Change link color when hovered over */
+      aside a {
+        color: var(--c-red);
+        text-decoration: none;
+      }
+      aside a:hover {
+        color: var(--c-blue);
+        text-decoration: underline;
+      }
+    /* 11. Set the maximum width of the page to 800px.*/
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    /* 12. All headings within the article should have a top padding of 50px. */
+      article h1, article h2, article h3, article h4, article h5, article h6 {
+        padding-top: 50px;
+      }
+    /* 13. Set the layout of the main content section such that the 'related links' portion is to the right of the article. */
+      main {
+        display: flex;
+      } 
+      aside {
+        flex-direction: column;
+      }
+      :root {
+        --base-font-color: rgb(131,148,150);
+        --secondary-font-color: rgb(88,110,117);
+        --emphasised-font: rgb(147,161,161);
+
+        --c-background-color: rgb(0, 43, 54);
+        
+        --c-background-highlights: rgb(7, 54, 66);
+
+        --c-yellow: rgb(181,137,  0);
+        --c-orange: rgb(203, 75, 22);
+        --c-red: rgb(220, 50, 47);
+        --c-magenta: rgb(211, 54,130);
+        --c-violet: rgb(108,113,196);
+        --c-blue: rgb(38,139,210);
+        --c-cyan: rgb(42,161,152);
+        --c-green: rgb(133,153,0);
+      }
+    </style>
+
+  </head>
+
+  <body>    
+  </body><nav>     
+    <!-- Here is our main header that is used across all the pages of our website -->
+  
+    <header>
+      <h1>Header</h1>
+    </header>
+
+  
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+       <!-- A Search form is another common non-linear way to navigate through a website. -->
+
+       <form>
+         <input type="search" name="q" placeholder="Search query">
+         <input type="submit" value="Go!">
+       </form>
+   
+
+    <!-- Here is our page's main content -->
+    <main>
+
+      <!-- It contains an article -->
+      <article>
+        <h2>Article heading</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. <a href="https://www.google.com"> Visit our website</a> for more information.</p>
+        
+        <h3>Subsection</h3>
+
+        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+
+        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+
+        <h3>Another subsection</h3>
+
+        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+
+        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+      </article>
+
+      <!-- the aside content can also be nested within the main content -->
+    
+      <aside>
+          <h2>Related</h2>
+          <ul>
+          <li><a href="#">Oh I do like to be beside the seaside</a></li>
+          <li><a href="#">Oh I do like to be beside the sea</a></li>
+          <li><a href="#">Although in the North of England</a></li>
+          <li><a href="#">It never stops raining</a></li>
+          <li><a href="#">Oh well...</a></li>
+        </ul>
+      </aside>
+
+    </main>
+</body>nav>
+    <!-- And here is our main footer that is used across all the pages of our website -->
+
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+
+  </body>
+</html>
